@@ -1,1 +1,1 @@
-Code for arduino that reads buttons and joystick.
+Code for arduino that controls LEDs (?).
