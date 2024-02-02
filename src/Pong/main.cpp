@@ -31,6 +31,45 @@ int main(int argc, char* argv[]){
 		while(SDL_PollEvent(&event)){
 			if(event.type == SDL_QUIT)
 				quit = true;
+			if (event.key.state == SDL_PRESSED) {
+					switch (event.key.keysym.sym) {
+						case SDLK_q:
+							Movers[0] = true;
+							break;
+						case SDLK_a:
+							Movers[1] = true;
+							break;
+						case SDLK_e:
+							Movers[2] = true;
+							break;
+						case SDLK_d:
+							Movers[3] = true;
+							break;
+						case SDLK_ESCAPE:
+							quit = true;
+							break;
+						default:
+							break;
+					}
+				}
+				if (event.key.state == SDL_RELEASED) {
+					switch (event.key.keysym.sym) {
+						case SDLK_q:
+							Movers[0] = false;
+							break;
+						case SDLK_a:
+							Movers[1] = false;
+							break;
+						case SDLK_e:
+							Movers[2] = false;
+							break;
+						case SDLK_d:
+							Movers[3] = false;
+							break;
+						default:
+							break;
+					}
+				}
 			if( event.type == SDL_JOYAXISMOTION ){
 		        if( event.jaxis.which == 0 ){																		//Motion on controller 0
 		          	if( event.jaxis.axis == 0 ){																	//X axis motion
