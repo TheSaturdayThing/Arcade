@@ -1,5 +1,9 @@
 PacMan and Pong source here.
-* Pong works only with joystick input.
+* Pong works only with both joystick and keyboard inputs
+  - joystick: to move the paddles, just move the joysticks up or down, if the game is over, it can be restarted by pressing the buttons with index '0' of the arcade cabinet (the top left ones).
+  - keyboard: to move the left paddle use 'Q' (up) and 'A' (down)
+              to move the right paddle use 'E' (up) and 'D' (down)
+              if the game is over, it can be restarted by pressing the spacebar
 * PacMan works with joystick, buttons and WASD (keyboard).  
 
 ![image](https://github.com/TheSaturdayThing/Arcade/assets/4332426/963a5b0b-a1f8-49ef-80dd-fcdb7eb14f67)
