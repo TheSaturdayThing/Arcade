@@ -1,1 +1,5 @@
-The led strip is a rgb 5050
+The led strip is a rgb 5050.
+In the LedTest.cpp file I connected the wires from the LED strip to the raspi pins like so:
+Red to GPIO 1
+Green to GPIO 0
+Blue to GPIO 2
